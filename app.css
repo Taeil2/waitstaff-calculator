@@ -1,0 +1,87 @@
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+  }
+
+header, main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+header {
+  text-align: center;
+}
+
+section {
+  border: 1px solid black;
+  padding: 15px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+section h2 {
+  margin-top: 0;
+  border-bottom: 1px solid black;
+  margin-left: -15px;
+  margin-right: -15px;
+  padding-left: 15px;
+  padding-bottom: 15px;
+}
+
+@media (min-width: 800px) {
+  main {
+    display: flex;
+  }
+  .col {
+    display: flex;
+    flex: 1 0 35%;
+    flex-direction: column;
+  }
+  .col1 {
+    margin-right: 10px;
+  }
+  .col2 {
+    margin-left: 10px;
+  }
+}
+
+.form-group, .display-group {
+  margin: 10px 0;
+}
+label {
+  display: inline-block;
+  text-align: right;
+}
+.form-group label {
+  min-width: 120px;
+}
+.charges .display-group label {
+  min-width: 60px;
+}
+.earnings .display-group label {
+  min-width: 150px;
+}
+.form-group span {
+  display: inline-block;
+  width: 15px;
+  text-align: right;
+  margin-right: 2px;
+}
+.form-buttons {
+  text-align: center;
+}
+
+input[type="text"] {
+
+}
+.dollar:before {
+  content: '$';
+}
+.percentage:before {
+  content: '%';
+}
